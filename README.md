@@ -35,5 +35,11 @@ yarn run test:e2e
 yarn run test:unit
 ```
 
+### Publish build to github
+```
+npm run build
+git push origin `git subtree split --prefix dist master`:iamstevekelly --force
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
