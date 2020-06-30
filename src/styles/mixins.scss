@@ -1,0 +1,151 @@
+@import 'themes/config.scss';
+
+@mixin for-sm-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-sm-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-md-up {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-lg-up {
+  @media (min-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin rounded {
+  border-radius: 6px;
+}
+
+@mixin button-behaviour {
+  padding: map-get($paddings, "button-paddings");
+  cursor: pointer;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+@mixin container-spacing {
+  margin: map-get($spacing, "container-margin");
+  padding: map-get($paddings, "container-padding");
+  box-sizing: border-box;
+}
+
+@mixin container-spacing-centered {
+  margin: map-get($spacing, "margin-centered");
+  display: block;
+  position: relative;
+  padding: map-get($paddings, "container-padding");
+  max-width: map-get($containers, "max-width");
+  box-sizing: border-box;
+}
+
+@mixin alert-spacing {
+  margin: map-get($spacings, "alert-margin");
+  padding: map-get($paddings, "alert-padding");
+  box-sizing: border-box;
+}
+
+@mixin panel-title-text-style {
+  font-weight: 500;
+  font-size: map-get($font-sizes, "xl");
+  margin: map-get($spacing, "mid-title");
+  text-rendering: optimizeLegibility;
+  letter-spacing: 1.05;
+}
+
+@mixin panel-content-text-style {
+  font-weight: normal;
+  font-size: map-get($font-sizes, "m");
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 1.0;
+}
+
+@mixin border-top-with-shadow($inverse: false) {
+  @if $inverse {
+    border-top: solid 1px map-get($colours, "stone");
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+  } @else {
+    border-top: solid 1px map-get($colours, "silver");
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@mixin border-bottom-with-shadow($inverse: false) {
+  @if $inverse {
+    border-bottom: solid 1px map-get($colours, "stone");
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+  } @else {
+    border-bottom: solid 1px map-get($colours, "silver");
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@mixin border-right-with-shadow($inverse: false) {
+  @if $inverse {
+    border-right: solid 1px map-get($colours, "stone");
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+  } @else {
+    border-right: solid 1px map-get($colours, "silver");
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@mixin border-left-with-shadow($inverse: false) {
+  @if $inverse {
+    border-left: solid 1px map-get($colours, "stone");
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+  } @else {
+    border-left: solid 1px map-get($colours, "silver");
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  }
+}
+
+// in in class with @include
+// i.e. @include for-sm-up {}
+
+// safari 11+
+@mixin safari-eleven-up {
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+      @content;
+    }
+  }
+}
+
+// ie 10+
+@mixin ie-ten-up() {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+// ie edge
+@mixin ie-edge {
+  @supports (-ms-ime-align:auto) {
+    @content;
+  }
+}
+
+@mixin nonChromePlatforms {
+  @include safari-eleven-up() {
+    @content;
+  }
+  @include ie-ten-up() {
+    @content;
+  }
+  @include ie-edge() {
+    @content;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "state": [
+    {
+      "title": "",
+      "path" : "/about"
+    }
+  ],
+  "content": {
+    "header": {
+      "components": [
+      ]
+    }
+,
+    "body": {
+      "components": [
+        {
+          "name": "paragraph",
+          "props": {
+            "text": "This is a paragraph"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "components": [
+      ]
+    }
+  }
+}

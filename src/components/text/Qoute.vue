@@ -1,0 +1,19 @@
+<template>
+  <p
+  class="quote"
+  v-html="text" />
+</template>
+
+<style lang="scss">
+</style>
+
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator';
+
+@Component({
+  components: {}
+})
+export default class Qoute extends Vue {
+  @Prop({default: ''}) text!:string;
+}
+</script>

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import '@/styles/tokens.scss';
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  letter-spacing: .1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  color: $charcoal;
+}
+
+h1 {
+  font-size: $font-size-xxxl;
+  font-weight: 700;
+  margin: $space-xs 0;
+}
+
+h2 {
+  font-size: $font-size-xxl;
+}
+
+h3 {
+  font-size: $font-size-xl;
+}
+
+h4 {
+  font-size: $font-size-l;
+}
+
+h5 {
+  font-size: $font-size-m;
+}

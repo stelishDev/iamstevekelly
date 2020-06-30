@@ -1,0 +1,76 @@
+@import 'themes/config.scss';
+
+$checkbox-font-size: 1.125rem;
+$checkbox-tick-font-size: 1.25rem;
+$checkbox-label-weight: 500;
+$checkbox-tick-label-weight: 700;
+
+a {
+  color: map-get($colours, "blue");
+  background: transparent;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button[role='checkbox']{
+  padding: 0;
+  min-width: 0;
+  white-space: normal;
+  text-align: initial;
+  outline: none;
+  background-color: transparent;
+  color: map-get($colours, "grey");
+  padding: 0.5em;
+  margin: 0;
+  position: relative;
+
+  input {
+    position: absolute;
+    left: -99999px;
+  }
+
+  [type='checkbox'] + label{
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    vertical-align: baseline;
+  }
+
+  [type='checkbox'] + label {
+    padding-left: 15px;
+    text-align: left;
+    cursor: pointer;
+    font-size: $checkbox-font-size;
+    font-weight: $checkbox-label-weight;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 17px;
+      height: 17px;
+      border: 2px solid #616161;
+    }
+
+    :checked {
+      &:after {
+        content: '\2713';
+        position: absolute;
+        top: 10px;
+        left: 2px;
+        font-size: $checkbox-tick-font-size;
+        line-height: 0.8;
+        color: map-get($colours, "yellow");
+        font-weight: $checkbox-tick-label-weight;
+        transition: all 0.2s;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,64 @@
+$breakpoints: (
+  "desktop": 1200px,
+  "large-desktop": 1800px,
+  "small": 600px
+);
+$units: (
+  "xs": .375em,
+  "s": .75em,
+  "m": 1.66667em,
+  "l": 2.2em,
+  "xl": 3.2em
+);
+$font-sizes: (
+  "xs": 13px,
+  "s": 15px,
+  "m": 17px,
+  "l": 20px,
+  "xl": 24px,
+  "xxl": 28px,
+  "xxxl": 2.25em
+);
+$containers: (
+  "max-width": 650px,
+  "max-action-width": 200px,
+  "max-list-width": 360px
+);
+$colours: (
+  "yellow": #ffcc20,
+  "blue": #0064ac,
+  "grey": #424242,
+  "light-grey": #f6f7fb,
+  "extra-light-grey": #f6f7fb,
+  "mid-grey": #ccc,
+  "dark-grey": #333,
+  "silver": #bdbebf,
+  "cloudy-blue": #b6bcc4,
+  "stone": #e7e8ec,
+  "black": #000,
+  "white": #fff,
+  "red": #d32f2f,
+  "green": #4CAF50,
+  "side-nav-bg": #262626,
+  "charcoal": #121212
+);
+$zindex: (
+  "header": 45,
+  "modal": 50,
+  "sidenav": 40,
+  "popover": 41,
+  "snackbar": 20,
+  "bg-index": -1,
+  "bg-overlay": 10
+);
+$paddings: (
+  "button-padding": .375em .75em,
+  "container-padding": .375em .75em .375em,
+  "alert-padding": .75em 1.66667em
+);
+$spacing: (
+  "margin-centered": 1.66667em auto,
+  "container-margin": 0 0 50px,
+  "alert-margin": .75em 0 1.66667em,
+  "mid-title": .75em 0
+);

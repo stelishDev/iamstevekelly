@@ -1,0 +1,116 @@
+{
+  "state": [
+    {
+      "title": "",
+      "path" : "/home"
+    }
+  ],
+  "content": {
+    "header": {
+      "components": [
+      ]
+    }
+,
+    "body": {
+      "components": [
+        {
+          "name": "logoCarousel",
+          "props": {
+            "items": [
+              {
+                "label": "Angular",
+                "imageSource": "/assets/iconfinder_angular_4691504.png",
+                "alt": "AngularJS 1+ and Angular 2+"
+              },
+              {
+                "label": "VueJS",
+                "imageSource": "/assets/vuejs.png",
+                "alt": "VueJS"
+              },
+              {
+                "label": "ReactJS",
+                "imageSource": "/assets/iconfinder_react_4691292.png",
+                "alt": "React"
+              },
+              {
+                "label": "Javascript",
+                "imageSource": "/assets/es6.png",
+                "alt": "ES5/6"
+              },
+              {
+                "label": "Typescript",
+                "imageSource": "/assets/typescript.jpg",
+                "alt": "Typescript"
+              },
+              {
+                "label": "RxJS",
+                "imageSource": "/assets/rxjs.jpg",
+                "alt": "RxJS Reactive programming"
+              },
+              {
+                "label": "Redux",
+                "imageSource": "/assets/iconfinder_redux_4691205.png",
+                "alt": "Redux"
+              },
+              {
+                "label": "NodeJS",
+                "imageSource": "/assets/nodejs-horiz.png",
+                "alt": "NodeJS"
+              },
+              {
+                "label": "Deno",
+                "imageSource": "/assets/iconfinder_deno_4691325.png",
+                "alt": "Deno"
+              },
+              {
+                "label": "GraphQL",
+                "imageSource": "/assets/iconfinder_graphql_4691403.png",
+                "alt": "GraphQL"
+              },
+
+              {
+                "label": "Sass",
+                "imageSource": "/assets/iconfinder_sass_4691373.png",
+                "alt": "Sass"
+              },
+              {
+                "label": "Jest",
+                "imageSource": "/assets/iconfinder_jest_4691287.png",
+                "alt": "Jest"
+              },
+              {
+                "label": "Karma",
+                "imageSource": "/assets/karma-logo.png",
+                "alt": "Karma"
+              },
+              {
+                "label": "Cypress",
+                "imageSource": "/assets/cypress.png",
+                "alt": "Cypress"
+              },
+              {
+                "label": "Storybook",
+                "imageSource": "/assets/storybook.png",
+                "alt": "Storybook"
+              },
+              {
+                "label": "Webpack",
+                "imageSource": "/assets/webpack.png",
+                "alt": "Webpack"
+              },
+              {
+                "label": "WebRTC",
+                "imageSource": "/assets/webrtc.png",
+                "alt": "WebRTC"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "footer": {
+      "components": [
+      ]
+    }
+  }
+}

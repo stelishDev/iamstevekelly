@@ -1,0 +1,40 @@
+@import '@/styles/tokens.scss';
+
+body {
+  contain: content;
+  margin: 0;
+}
+
+.main-content {
+  padding: $space-l $space-xl;
+  position: relative;
+  display: block;
+}
+
+.horizontal-layout {
+  display: inline-flex;
+  position: relative;
+}
+
+.position-left {
+  position: absolute;
+  left: 0;
+  clear: both;
+  width: fit-content;
+}
+
+.position-right {
+  position: absolute;
+  right: 0;
+  clear: both;
+  width: fit-content;
+}
+
+.half-width {
+  max-width:50vw;
+  width: 100%;
+  min-width: 50vw;
+  contain: content;
+  box-sizing: border-box;
+  overflow: hidden;
+}
