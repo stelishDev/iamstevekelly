@@ -36,6 +36,7 @@ yarn run test:unit
 ```
 
 ### Publish build to github
+Build the /dist and deploy to github branch
 ```
 npm run build
 git push origin `git subtree split --prefix dist master`:iamstevekelly --force
